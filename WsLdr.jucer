@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="eALxBG" name="WsLdr" projectType="audioplug" useAppConfig="0"
+              displaySplashScreen="1" jucerFormatVersion="1" companyEmail="wesleyscottuk@gmail.com"
+              pluginFormats="buildAU,buildStandalone" pluginManufacturerCode="WsAU"
+              pluginCode="WsLd" companyName="Ws">
+  <MAINGROUP id="W7EQ6m" name="WsLdr">
+    <GROUP id="{28BB1752-E897-0F58-5EC2-03CA8D6EACB5}" name="Source">
+      <GROUP id="{32E19DCE-7D86-82AE-6F61-2536E2D84434}" name="LadderFilter">
+        <GROUP id="{CFBF8446-35F7-D0AE-A239-0EF4D08E502C}" name="GUI">
+          <FILE id="IsMncU" name="LadderFilterGUI.cpp" compile="1" resource="0"
+                file="Source/LadderFilter/GUI/LadderFilterGUI.cpp"/>
+          <FILE id="PMXlQl" name="LadderFilterGUI.h" compile="0" resource="0"
+                file="Source/LadderFilter/GUI/LadderFilterGUI.h"/>
+        </GROUP>
+        <GROUP id="{EBB3B366-644F-1A89-68EE-77439434DBBD}" name="DSP">
+          <FILE id="Wxx2nr" name="LadderFilter.h" compile="0" resource="0" file="Source/LadderFilter/DSP/LadderFilter.h"/>
+        </GROUP>
+      </GROUP>
+      <GROUP id="{12FF7C37-6E18-B05B-6A26-FD7A5097B5B3}" name="GUI">
+        <FILE id="wMJ8v7" name="PluginEditor.h" compile="0" resource="0" file="Source/GUI/PluginEditor.h"/>
+        <FILE id="tIHKkM" name="PluginEditor.cpp" compile="1" resource="0"
+              file="Source/GUI/PluginEditor.cpp"/>
+      </GROUP>
+      <GROUP id="{949B9469-0BFD-1C54-91C1-A060D32E1812}" name="DSP">
+        <FILE id="PRUVVX" name="PluginProcessor.cpp" compile="1" resource="0"
+              file="Source/DSP/PluginProcessor.cpp"/>
+        <FILE id="FDA2dK" name="PluginProcessor.h" compile="0" resource="0"
+              file="Source/DSP/PluginProcessor.h"/>
+      </GROUP>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" xcodeValidArchs="x86_64">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="WsLdr"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="WsLdr"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="0"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+  </MODULES>
+</JUCERPROJECT>
